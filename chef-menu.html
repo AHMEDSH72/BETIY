@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'
+            rel='stylesheet'>
+        <link rel="shortcut icon" href="./img/123-removebg-preview.png"
+            type="image/x-icon">
+        <title>بيتي</title>
+    </head>
+    <body>
+        <nav>
+            <div class="navbar">
+                <i class='bx bx-menu'></i>
+                <div class="logo"><a href="./index.html"><img
+                            src="./img/123-removebg-preview.png"
+                            alt></a></div>
+                <div class="nav-links">
+                    <div class="sidebar-logo">
+                        <span class="logo-name"><img
+                                src="./img/123-removebg-preview.png"
+                                style="  width: 139px;
+  object-fit: cover;
+  height: 50px;" alt></span>
+                        <i class='bx bx-x'></i>
+                    </div>
+                    <ul class="links">
+                        <li><a href="./index.html">الصفحه الرئيسية</a></li>
+                        <li>
+                            <a href="./Menu.html"> المنيو</a>
+                        </li>
+                        <li>
+                            <a href="./Chef.html"> الشيفات</a>
+                            <!-- <i class='bx bxs-chevron-down js-arrow arrow '></i> -->
+                            <!-- <ul class="js-sub-menu sub-menu">
+              <li><a href="#">Dynamic Clock</a></li>
+              <li><a href="#">Form Validation</a></li>
+              <li><a href="#">Card Slider</a></li>
+              <li><a href="#">Complete Website</a></li>
+            </ul> -->
+                        </li>
+                        <li><a href="./Offers.html">العروض</a></li>
+
+                        <li><a href="./About.html">من نحن </a></li>
+
+                        <li><a href="./Contact.html"> اتصل بنا</a></li>
+                        <li>
+
+                        </li>
+
+                        <li>
+                            <a href="./loginForm.html"><button type="button"
+                                    class="btn" style="    background: none;
+    color: black;
+    border:1px solid #bbb;"> تسجيل الدخول</button>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+        </div>
+      </div> -->
+            </div>
+        </nav>
+        <section class="mobile-menu-section">
+            <div class="menu-wrapper">
+
+                <div class="menu-brand">
+                    <div class="chef-avatar">👩‍🍳</div>
+                    <div class="brand-text">
+                        <h2>منيو الشيف مريم</h2>
+                        <p>أكل بيتي.. طعم يشرفك</p>
+                    </div>
+                </div>
+
+                <div class="tabs-scroll">
+                    <button class="tab-item active"
+                        onclick="switchMenu(event, 'meals')">وجبات</button>
+                    <button class="tab-item"
+                        onclick="switchMenu(event, 'offers')">عروض</button>
+                    <button class="tab-item"
+                        onclick="switchMenu(event, 'feasts')">عزومات</button>
+                </div>
+
+                <div class="menu-content">
+
+                    <div id="meals" class="menu-panel active">
+                        <div class="food-card">
+                            <div class="food-details">
+                                <h4>نص فرخة + أرز + ملوخية</h4>
+                                <p>فرخة مشوية بتتبيلة بيتي مع أرز بشعيرية</p>
+                                <span class="food-price">160 ج.م</span>
+                            </div>
+                            <a href="./check.html"> <button class="select-btn"
+                                    onclick="scrollToOrder()">طلب</button>
+                            </a>
+                        </div>
+                        <div class="food-card">
+                            <div class="food-details">
+                                <h4>مكرونة بشاميل (قطعة كبيرة)</h4>
+                                <p>باللحمة البلدي والكريمة الغنية</p>
+                                <span class="food-price">85 ج.م</span>
+                            </div>
+                    <a href="./check.html"> <button class="select-btn"
+                                    onclick="scrollToOrder()">طلب</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="offers" class="menu-panel">
+                        <div class="food-card promo">
+                            <div class="food-details">
+                                <span class="promo-tag">وفر 100ج 🎁</span>
+                                <h4>عرض العيلة المحبوبة</h4>
+                                <p>2 دجاجة + كيلو كفتة + أرز عائلي + 4 سلطة</p>
+                                <span class="food-price">620 ج.م
+                                    <del>720</del></span>
+                            </div>
+                     <a href="./check.html"> <button class="select-btn"
+                                    onclick="scrollToOrder()">طلب</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="feasts" class="menu-panel">
+                        <div class="food-card">
+                            <div class="food-details">
+                                <h4>سرفيس "العزومة الملكي"</h4>
+                                <p>ديك رومي أو تيس + محاشي مشكلة + رقاق</p>
+                                <span class="food-price">حسب الوزن</span>
+                            </div>
+                            <div class="time-note">🕒 يطلب قبلها بـ 48
+                                ساعة</div>
+                       <a href="./check.html"> <button class="select-btn"
+                                    onclick="scrollToOrder()">طلب</button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <style>
+    /* تنسيق الموبايل */
+    .mobile-menu-section {
+        direction: rtl;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #fcfcfc;
+        padding: 20px 0;
+    }
+
+    .menu-wrapper { width: 100%; margin: 0 auto; }
+
+    /* الهوية البصرية للشيف */
+    .menu-brand {
+        display: flex;
+        align-items: center;
+        gap: 15px;    margin-top: 70px;
+        padding: 0 20px 20px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .chef-avatar {
+        width: 60px; height: 60px;
+        background: #fff4ed;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        border: 2px solid #568255;
+    }
+
+    .brand-text h2 { margin: 0; font-size: 1.2rem; color: #2d3436; }
+    .brand-text p { margin: 2px 0 0; font-size: 0.85rem; color: #636e72; }
+
+    /* أزرار التبويب (Scrollable Tabs) */
+    .tabs-scroll {
+        display: flex;
+        overflow-x: auto;
+        padding: 15px 20px;
+        gap: 10px;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch; /* تمرير ناعم في آيفون */
+    }
+
+    .tabs-scroll::-webkit-scrollbar { display: none; } /* إخفاء السكرول بار */
+
+    .tab-item {
+        background: #f1f2f6;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 25px;
+        font-weight: bold;
+        color: #555;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .tab-item.active { background: #568255; color: white; box-shadow: 0 4px 10px rgba(86,130,85,0.2); }
+
+    /* كروت الطعام */
+    .menu-content { padding: 10px 20px; }
+    .menu-panel { display: none; animation: slideIn 0.3s ease-out; }
+    .menu-panel.active { display: block; }
+
+    .food-card {
+        background: white;
+        border-radius: 18px;
+        padding: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        border: 1px solid #f0f0f0;
+    }
+
+    .food-card.promo { border: 1.5px dashed #27ae60; background: #fafffa; }
+    .promo-tag { color: #27ae60; font-weight: bold; font-size: 0.75rem; margin-bottom: 5px; display: block; }
+
+    .food-details { flex: 1; text-align: right; }
+    .food-details h4 { margin: 0 0 5px; font-size: 1rem; color: #2d3436; }
+    .food-details p { margin: 0 0 8px; font-size: 0.8rem; color: #b2bec3; line-height: 1.4; }
+    .food-price { color: #568255; font-weight: 800; font-size: 1.1rem; }
+    .food-price del { font-size: 0.85rem; color: #b2bec3; margin-right: 5px; }
+
+    .time-note { font-size: 0.75rem; color: #568255; margin-top: 5px; font-weight: bold; }
+
+    .select-btn {
+        background: #2d3436;
+        color: white;
+        border: none;
+        padding: 8px 18px;
+        border-radius: 12px;
+        font-weight: bold;
+        font-size: 0.85rem;
+        margin-right: 15px;
+    }
+
+    @keyframes slideIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+
+        <script>
+    function switchMenu(evt, sectionId) {
+        // إخفاء الكل
+        const panels = document.getElementsByClassName("menu-panel");
+        for (let panel of panels) panel.classList.remove("active");
+
+        const tabs = document.getElementsByClassName("tab-item");
+        for (let tab of tabs) tab.classList.remove("active");
+
+        // إظهار القسم المختار
+        document.getElementById(sectionId).classList.add("active");
+        evt.currentTarget.classList.add("active");
+    }
+
+    function scrollToOrder() {
+        // هذه الوظيفة تجعل الشاشة تنزل لسكشن تأكيد الطلب تلقائياً
+        document.getElementById('mainSection').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+        <script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            tabcontent[i].classList.remove("active");
+        }
+        tablinks = document.getElementsByClassName("tab-btn");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active");
+        }
+        document.getElementById(tabName).style.display = "block";
+        document.getElementById(tabName).classList.add("active");
+        evt.currentTarget.classList.add("active");
+    }
+</script>
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-logo"> مطبخنا بيتي </div>
+                <p>نقدم لك أجود الوجبات المنزلية المصنوعة بكل حب ونظافة.</p>
+                <div class="social-links">
+                    <span>Facebook</span> | <span>Instagram</span> |
+                    <span>TikTok</span>
+                </div>
+                <hr>
+                <p class="copyright">© 2026 جميع الحقوق محفوظة ل بيتي</p>
+            </div>
+        </footer>
+
+        <a href="https://wa.me/201026377928" class="whatsapp-float"
+            target="_blank">
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                alt="WhatsApp">
+            <span>اسأل الشيف</span>
+        </a>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

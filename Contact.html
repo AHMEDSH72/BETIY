@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'
+            rel='stylesheet'>
+        <link rel="shortcut icon" href="./img/123-removebg-preview.png"
+            type="image/x-icon">
+        <title>بيتي</title>
+    </head>
+    <body>
+         <nav>
+      <div class="navbar">
+        <i class='bx bx-menu'></i>
+        <div class="logo"><a href="./index.html"><img
+              src="./img/123-removebg-preview.png"
+              alt></a></div>
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <span class="logo-name"><img src="./img/123-removebg-preview.png"
+                style="  width: 139px;
+  object-fit: cover;
+  height: 50px;" alt></span>
+            <i class='bx bx-x'></i>
+          </div>
+          <ul class="links">
+            <li><a href="./index.html">الصفحه الرئيسية</a></li>
+            <li>
+              <a href="./Menu.html"> المنيو</a>
+            </li>
+            <li>
+              <a href="./Chef.html"> الشيفات</a>
+              <!-- <i class='bx bxs-chevron-down js-arrow arrow '></i> -->
+              <!-- <ul class="js-sub-menu sub-menu">
+              <li><a href="#">Dynamic Clock</a></li>
+              <li><a href="#">Form Validation</a></li>
+              <li><a href="#">Card Slider</a></li>
+              <li><a href="#">Complete Website</a></li>
+            </ul> -->
+            </li>
+            <li><a href="./Offers.html">العروض</a></li>
+
+            <li><a href="./About.html">من نحن </a></li>
+
+            <li><a href="./Contact.html"> اتصل بنا</a></li>
+            <li>
+
+            </li>
+
+            <li>
+              <a href="./loginForm.html"><button type="button"
+                  class="btn" style="    background: none;
+    color: black;
+    border:1px solid #bbb;"> تسجيل الدخول</button>
+              </a>
+            </li>
+          
+          </ul>
+
+        </div>
+
+        <!-- <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+        </div>
+      </div> -->
+      </div>
+    </nav>
+     <section id="contact-section">
+    <div class="contact-container">
+        
+        <div class="contact-header">
+            <span class="c-tag">خلينا على تواصل</span>
+            <h2>يسعدنا سماع صوتك 🤝</h2>
+            <p>سواء كانت عندك عزومة قريبة أو استفسار بسيط، إحنا هنا عشان نساعدك.</p>
+        </div>
+
+        <div class="contact-grid">
+            
+            <div class="contact-info-boxes">
+                <div class="info-item">
+                    <div class="icon">📞</div>
+                    <div class="details">
+                        <h4>كلمينا مباشرة</h4>
+                        <p>0100 000 0000</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon">💬</div>
+                    <div class="details">
+                        <h4>واتساب (سريع)</h4>
+                        <p>اضغط لبدء المحادثة</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon">📍</div>
+                    <div class="details">
+                        <h4>مقرنا</h4>
+                        <p>القاهرة، التجمع الخامس، شارع التسعين.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form id="catering-form">
+                    <div class="input-group">
+                        <input type="text" placeholder="الاسم الكريم" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" placeholder="رقم الموبايل" required>
+                    </div>
+                    <div class="input-group">
+                        <select required>
+                            <option value="" disabled selected>نوع الاستفسار</option>
+                            <option value="عزومة">تجهيز عزومة</option>
+                            <option value="اشتراك">اشتراكات وجبات</option>
+                            <option value="اقتراح">اقتراح أو شكوى</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <textarea placeholder="رسالتك أو تفاصيل عزومتك.." rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">إرسال الطلب الآن</button>
+                </form>
+            </div>
+
+        </div>
+    </div><style>
+    /* التنسيق "الراقي والنظيف" */
+    #contact-section {
+        padding: 100px 5%;
+        background-color: #fbfbfb;
+        direction: rtl;
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
+
+    .contact-container { max-width: 1100px; margin: 0 auto; }
+
+    .contact-header { text-align: center; margin-bottom: 70px; }
+    .c-tag { color: #d4a373; font-weight: bold; font-size: 0.9rem; letter-spacing: 1px; }
+    .contact-header h2 { font-size: 2.5rem; color: #1a1a1a; margin: 10px 0; }
+    .contact-header p { color: #777; font-size: 1.1rem; }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 60px;
+        align-items: start;
+    }
+
+    /* صناديق المعلومات */
+    .contact-info-boxes { display: flex; flex-direction: column; gap: 30px; }
+    .info-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background: #fff;
+        padding: 25px;
+        border-radius: 15px;
+        border: 1px solid #eee;
+    }
+    .info-item .icon { font-size: 2rem; }
+    .info-item h4 { font-size: 1.1rem; color: #1a1a1a; margin: 0 0 5px 0; }
+    .info-item p { color: #666; margin: 0; font-size: 0.95rem; }
+
+    /* الفورم (Form) */
+    .contact-form-wrapper {
+        background: #fff;
+        padding: 50px;
+        border-radius: 30px;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.03);
+    }
+    .input-group { margin-bottom: 20px; }
+    .input-group input, .input-group select, .input-group textarea {
+        width: 100%;
+        padding: 15px 20px;
+        border: 1px solid #eee;
+        border-radius: 12px;
+        background: #fdfdfd;
+        font-family: inherit;
+        font-size: 1rem;
+        outline: none;
+        transition: 0.3s;
+    }
+    .input-group input:focus, .input-group textarea:focus {
+        border-color: #d4a373;
+        background: #fff;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 18px;
+        background: #1a1a1a;
+        color: #fff;
+        border: none;
+        border-radius: 12px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .submit-btn:hover { background: #588157; }
+
+    /* ريسبونسيف الموبايل */
+    @media (max-width: 992px) {
+        .contact-grid { grid-template-columns: 1fr; }
+        .contact-form-wrapper { padding: 30px 20px; }
+        .contact-header h2 { font-size: 2rem; }
+    }
+</style>
+</section>
+
+
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-logo"> مطبخنا بيتي </div>
+                <p>نقدم لك أجود الوجبات المنزلية المصنوعة بكل حب ونظافة.</p>
+                <div class="social-links">
+                    <span>Facebook</span> | <span>Instagram</span> |
+                    <span>TikTok</span>
+                </div>
+                <hr>
+                <p class="copyright">© 2026 جميع الحقوق محفوظة ل بيتي</p>
+            </div>
+        </footer>
+
+        <a href="https://wa.me/201026377928" class="whatsapp-float"
+            target="_blank">
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                alt="WhatsApp">
+            <span>اسأل الشيف</span>
+        </a>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

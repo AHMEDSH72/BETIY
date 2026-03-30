@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'
+            rel='stylesheet'>
+        <link rel="shortcut icon" href="./img/123-removebg-preview.png"
+            type="image/x-icon">
+        <title>بيتي</title>
+    </head>
+    <body>
+       <nav>
+      <div class="navbar">
+        <i class='bx bx-menu'></i>
+        <div class="logo"><a href="./index.html"><img
+              src="./img/123-removebg-preview.png"
+              alt></a></div>
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <span class="logo-name"><img src="./img/123-removebg-preview.png"
+                style="  width: 139px;
+  object-fit: cover;
+  height: 50px;" alt></span>
+            <i class='bx bx-x'></i>
+          </div>
+          <ul class="links">
+            <li><a href="./index.html">الصفحه الرئيسية</a></li>
+            <li>
+              <a href="./Menu.html"> المنيو</a>
+            </li>
+            <li>
+              <a href="./Chef.html"> الشيفات</a>
+              <!-- <i class='bx bxs-chevron-down js-arrow arrow '></i> -->
+              <!-- <ul class="js-sub-menu sub-menu">
+              <li><a href="#">Dynamic Clock</a></li>
+              <li><a href="#">Form Validation</a></li>
+              <li><a href="#">Card Slider</a></li>
+              <li><a href="#">Complete Website</a></li>
+            </ul> -->
+            </li>
+            <li><a href="./Offers.html">العروض</a></li>
+
+            <li><a href="./About.html">من نحن </a></li>
+
+            <li><a href="./Contact.html"> اتصل بنا</a></li>
+            <li>
+
+            </li>
+
+            <li>
+              <a href="./loginForm.html"><button type="button"
+                  class="btn" style="    background: none;
+    color: black;
+    border:1px solid #bbb;"> تسجيل الدخول</button>
+              </a>
+            </li>
+          
+          </ul>
+
+        </div>
+
+        <!-- <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+        </div>
+      </div> -->
+      </div>
+    </nav>
+        <section class="mega-events-section" dir="rtl">
+            <style>
+        .mega-events-section {
+            padding: 60px 20px;    margin-top: 25px;
+            background-color: #fcfaf7;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .container-events { max-width: 1400px; margin: 0 auto; }
+
+        .events-grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .event-card-v2 {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+            border: 1px solid #eee;
+            transition: 0.4s;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .event-card-v2:hover { transform: translateY(-10px); border-color: #4a5d4d; }
+
+        /* مكان اسم الشيف الجديد - فوق الصورة بلمسة فخمة */
+        .chef-badge-top {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 5px 15px;
+            border-radius: 12px;
+            font-weight: 800;
+            font-size: 0.8rem;
+            color: #8d4925;
+            z-index: 10;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-right: 4px solid #d4af37;
+        }
+
+        /* بادج عدد الأفراد */
+        .capacity-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #4a5d4d;
+            color: #fff;
+            padding: 5px 12px;
+            border-radius: 10px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            z-index: 10;
+        }
+
+        .img-wrapper { height: 180px; width: 100%; position: relative; }
+        .img-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+
+        .content-body { padding: 20px; flex-grow: 1; }
+
+        .event-category { color: #d4af37; font-size: 0.75rem; font-weight: 900; margin-bottom: 5px; display: block; }
+        
+        .content-body h3 { font-size: 1.2rem; margin: 0 0 12px; color: #2c3e50; font-weight: 900; line-height: 1.4; }
+
+        /* سكشن المكونات - واضحة ومباشرة */
+        .ingredients-list {
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+        .ingredients-list strong { font-size: 0.8rem; color: #555; display: block; margin-bottom: 5px; }
+        .ingredients-text { font-size: 0.85rem; color: #444; font-weight: 600; line-height: 1.5; }
+
+        .card-footer-v2 {
+            padding: 15px 20px;
+            background: #fff;
+            border-top: 1px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price-info { display: flex; flex-direction: column; }
+        .p-new { font-size: 1.5rem; font-weight: 900; color: #e74c3c; line-height: 1; }
+        .p-old { font-size: 0.9rem; text-decoration: line-through; color: #bbb; }
+
+        .btn-order-v2 {
+            background: #2c3e50;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-order-v2:hover { background: #4a5d4d; }
+
+        @media (max-width: 1200px) { .events-grid-4 { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 600px) { .events-grid-4 { grid-template-columns: 1fr; } }
+    </style>
+
+            <div class="container-events ">
+                <h2 
+                    style="text-align:center; font-size: 2rem; margin-bottom:50px; color:#2c3e50;        font-weight: bold; 
+">باقات
+                    "عزومات البيوت" الأصيلة </h2>
+
+                <div class="events-grid-4" id="mainEventsGrid">
+                </div>
+            </div>
+
+            <script>
+        const myEvents = [
+            {
+                category: "عزومات رمضان 🌙",
+                chef: "شيف منى أحمد",
+                title: "وليمة الإفطار الفاخرة",
+                ingredients: "ذكر بط محمر + 1ك محشي مشكل + ملوخية خضراء + شوربة عصفور + 1ك أرز بشعيرية",
+                capacity: "6 أفراد",
+                oldP: 1350, newP: 980, img: "https://images.unsplash.com/photo-1541529086526-db283c563270?w=500"
+            },
+            {
+                category: "أفراح ومناسبات 👰",
+                chef: "شيف مروة الشربيني",
+                title: "وجبة الفرح (الباقة الماسية)",
+                ingredients: "ربع فرخة + قطعة لحم + مكرونة بشاميل + أرز بسمتي + سلطات + جاتوه",
+                capacity: "فرد واحد",
+                oldP: 280, newP: 195, img: "https://images.unsplash.com/photo-1555244162-803834f70033?w=500"
+            },
+            {
+                category: "عزاء وإطعام 🤲",
+                chef: "مطبخ الخير",
+                title: "وجبة الثواب المشبعة",
+                ingredients: "نص فرخة مسلوقة + خضار تورلي + أرز أبيض + عيش + ثمرة فاكهة",
+                capacity: "فرد واحد",
+                oldP: 170, newP: 130, img: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=500"
+            },
+            {
+                category: "عزومة عائلية 🏠",
+                chef: "شيف هدى الريفي",
+                title: "صينية الرقاق والبطاطس",
+                ingredients: "صينية رقاق باللحمة + صينية بطاطس بالفراخ + أرز معمر + مخلل بيتي",
+                capacity: "4 أفراد",
+                oldP: 650, newP: 480, img: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=500"
+            }
+        ];
+
+        const grid = document.getElementById('mainEventsGrid');
+        myEvents.forEach(e => {
+            grid.innerHTML += `
+                <div class="event-card-v2">
+                    <div class="chef-badge-top">👩‍🍳 ${e.chef}</div>
+                    <div class="capacity-badge">👤 ${e.capacity}</div>
+                    <div class="img-wrapper">
+                        <img src="${e.img}" alt="${e.title}">
+                    </div>
+                    <div class="content-body">
+                        <span class="event-category">${e.category}</span>
+                        <h3>${e.title}</h3>
+                        <div class="ingredients-list">
+                            <strong>مكونات الوليمة:</strong>
+                            <div class="ingredients-text">${e.ingredients}</div>
+                        </div>
+                    </div>
+                    <div class="card-footer-v2">
+                        <div class="price-info">
+                            <span class="p-old">${e.oldP} ج</span>
+                            <span class="p-new">${e.newP} ج</span>
+                        </div>
+                        <a href="./check.html" class="btn-order-v2">احجز العزومة</a>
+                    </div>
+                </div>
+            `;
+        });
+    </script>
+        </section>
+
+        <section class="hosting-trust" dir="rtl">
+            <style>
+        .hosting-trust {
+            background: #2c3e50; /* كحلي فخم يدي إيحاء بالرسمية والثقة */
+            padding: 60px 20px;
+            color: #fff;
+            font-family: 'Cairo', sans-serif;
+            border-radius: 50px 50px 0 0;
+            margin-top: 50px;
+        }
+
+        .trust-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+
+        .trust-item i {
+            font-size: 2.5rem;
+            color: #d4af37; /* ذهبي */
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .trust-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #d4af37;
+            font-weight: 900;
+        }
+
+        .trust-item p {
+            font-size: 0.9rem;
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 800px) {
+            .trust-container { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+
+            <div class="trust-container">
+                <div class="trust-item">
+                    <i>⏰</i>
+                    <h4>دقة الساعاتية</h4>
+                    <p>العزومة يعني ميعاد مقدس. أكلنا يوصلك قبل أول ضيف ما يوصل
+                        بـ 15 دقيقة بالتمام.</p>
+                </div>
+
+                <div class="trust-item">
+                    <i>📦</i>
+                    <h4>تغليف الفنادق</h4>
+                    <p>بنغلف في أطباق حرارية (Thermal) عشان الأكل يفضل "سخن نار"
+                        لغاية لحظة الغرف.</p>
+                </div>
+
+                <div class="trust-item">
+                    <i>🧼</i>
+                    <h4>نظافة البيوت</h4>
+                    <p>خضار منقى بالواحدة، وسمن بلدي أصلي، ولحمة بلدي من جزارنا
+                        الموثوق.. ذمة وأمانة.</p>
+                </div>
+
+                <div class="trust-item">
+                    <i>✨</i>
+                    <h4>تشريف قدام الضيوف</h4>
+                    <p>تزيين الأطباق (Garnish) علينا. بنطلعلك السرفيس بشكل يخلي
+                        ضيوفك يسألوك: مين الشيف؟</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="emergency-catering-section">
+            <style>
+    #emergency-catering-section {
+        padding: 60px 20px;
+        background-color: #f4f4f4;
+        direction: rtl;
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
+
+    .emergency-card {
+        max-width: 550px;
+        margin: 0 auto;
+        background: #ffffff;
+        border-radius: 15px;
+        border-top: 6px solid #e67e22; /* برتقالي غامق بيدي إحساس بالسرعة */
+        padding: 35px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    }
+
+    /* علامة الطوارئ */
+    .emergency-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #fff3e0;
+        color: #e67e22;
+        padding: 5px 15px;
+        border-radius: 50px;
+        font-size: 0.85rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+        background: #e67e22;
+        border-radius: 50%;
+        animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0.3; }
+        100% { opacity: 1; }
+    }
+
+    .card-header h2 { color: #1a1a1a; margin: 0 0 10px 0; font-size: 1.6rem; }
+    .card-header p { color: #666; font-size: 0.95rem; line-height: 1.5; }
+
+    /* الفورم */
+    .fast-form { margin-top: 30px; }
+    .input-row { display: flex; gap: 15px; margin-bottom: 15px; flex-wrap: wrap; }
+    .input-field { flex: 1; min-width: 200px; text-align: right; }
+    
+    label { display: block; font-size: 0.85rem; color: #444; margin-bottom: 6px; font-weight: 600; }
+    input {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #eee;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-size: 1rem;
+        transition: 0.3s;
+    }
+
+    input:focus { border-color: #e67e22; outline: none; background: #fffaf5; }
+
+    /* الزر السريع */
+    .fast-action-btn {
+        width: 100%;
+        background: #1a1a1a; /* أسود فخم */
+        color: #fff;
+        border: none;
+        padding: 18px;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-top: 10px;
+        text-transform: uppercase;
+    }
+
+    .fast-action-btn:hover { background: #e67e22; transform: scale(1.02); }
+
+    .guarantee-note {
+        font-size: 0.8rem;
+        color: #999;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    @media (max-width: 500px) {
+        .input-row { gap: 10px; }
+    }
+</style>
+            <div class="emergency-card">
+
+                <div class="card-header">
+                    <div class="emergency-tag">
+                        <span class="dot"></span> مسار الطوارئ السريع (24 ساعة)
+                    </div>
+                    <h2>إنقاذ الموقف يبدأ من هنا ⚡</h2>
+                    <p>الضيوف على وصول؟ مفيش وقت للمنيو الطويل؟ <br> املئي
+                        البيانات فوراً وهنفتح لكِ صفحة "منيو الطوارئ"
+                        الجاهز.</p>
+                </div>
+
+                <form id="emergencyForm" class="fast-form"
+                    onsubmit="redirectToEmergencyMenu(event)">
+
+                    <div class="input-row">
+                        <div class="input-field">
+                            <label>نوع الكارثة (المناسبة)؟</label>
+                            <input type="text" id="eventTitle"
+                                placeholder="مثلاً: عزومة مفاجئة" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>اسمك (للتواصل الفوري)</label>
+                            <input type="text" id="custName"
+                                placeholder="اكتبي اسمك هنا" required>
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-field">
+                            <label>عدد الأشخاص</label>
+                            <input type="number" id="peopleCount"
+                                placeholder="00" required>
+                        </div>
+                        <div class="input-field">
+                            <label>الوقت المتبقي (بالساعات)؟</label>
+                            <input type="number" id="timeLeft"
+                                placeholder="باقي كام ساعة؟" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="fast-action-btn">
+                        انقذوني وافتحوا المنيو الجاهز 🚀
+                    </button>
+
+                    <p class="guarantee-note">🛡️ نضمن لكِ الرد والتجهيز في
+                        أرقام قياسية.</p>
+                </form>
+
+            </div>
+            <script>
+    function redirectToEmergencyMenu(event) {
+        event.preventDefault();
+
+        // تجميع بيانات الطوارئ
+        const sosData = {
+            reason: document.getElementById('eventTitle').value,
+            client: document.getElementById('custName').value,
+            count: document.getElementById('peopleCount').value,
+            hoursLeft: document.getElementById('timeLeft').value
+        };
+
+        const params = new URLSearchParams(sosData).toString();
+        
+        // الصفحة اللي هيروح لها (صفحة المنيو الجاهز)
+        const nextStepUrl = "emergency-menu.html"; 
+
+        // الانتقال
+        window.location.href = `${nextStepUrl}?${params}`;
+    }
+</script>
+
+        </section>
+
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-logo"> مطبخنا بيتي </div>
+                <p>نقدم لك أجود الوجبات المنزلية المصنوعة بكل حب ونظافة.</p>
+                <div class="social-links">
+                    <span>Facebook</span> | <span>Instagram</span> |
+                    <span>TikTok</span>
+                </div>
+                <hr>
+                <p class="copyright">© 2026 جميع الحقوق محفوظة ل بيتي</p>
+            </div>
+        </footer>
+
+        <a href="https://wa.me/201026377928" class="whatsapp-float"
+            target="_blank">
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                alt="WhatsApp">
+            <span>اسأل الشيف</span>
+        </a>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

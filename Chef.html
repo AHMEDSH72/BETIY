@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'
+            rel='stylesheet'>
+        <link rel="shortcut icon" href="./img/123-removebg-preview.png"
+            type="image/x-icon">
+        <title>بيتي</title>
+    </head>
+    <body>
+        <nav>
+            <div class="navbar">
+                <i class='bx bx-menu'></i>
+                <div class="logo"><a href="./index.html"><img
+                            src="./img/123-removebg-preview.png"
+                            alt></a></div>
+                <div class="nav-links">
+                    <div class="sidebar-logo">
+                        <span class="logo-name"><img
+                                src="./img/123-removebg-preview.png"
+                                style="  width: 139px;
+  object-fit: cover;
+  height: 50px;" alt></span>
+                        <i class='bx bx-x'></i>
+                    </div>
+                    <ul class="links">
+                        <li><a href="./index.html">الصفحه الرئيسية</a></li>
+                        <li>
+                            <a href="./Menu.html"> المنيو</a>
+                        </li>
+                        <li>
+                            <a href="./Chef.html"> الشيفات</a>
+                            <!-- <i class='bx bxs-chevron-down js-arrow arrow '></i> -->
+                            <!-- <ul class="js-sub-menu sub-menu">
+              <li><a href="#">Dynamic Clock</a></li>
+              <li><a href="#">Form Validation</a></li>
+              <li><a href="#">Card Slider</a></li>
+              <li><a href="#">Complete Website</a></li>
+            </ul> -->
+                        </li>
+                        <li><a href="./Offers.html">العروض</a></li>
+
+                        <li><a href="./About.html">من نحن </a></li>
+
+                        <li><a href="./Contact.html"> اتصل بنا</a></li>
+                        <li>
+
+                        </li>
+
+                        <li>
+                            <a href="./loginForm.html"><button type="button"
+                                    class="btn" style="    background: none;
+    color: black;
+    border:1px solid #bbb;"> تسجيل الدخول</button>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+        </div>
+      </div> -->
+            </div>
+        </nav>
+<section class="chefs-hub-section">
+    <div class="hub-container">
+        
+        <div class="hub-header">
+            <span class="hub-badge">نخبة طهاة المنزل </span>
+            <h2>اختار شيف مطبخك المفضل</h2>
+            <p>أكل بيتي حقيقي بنظافة تشرّفك وطعم ملوش زي</p>
+        </div>
+
+        <div class="chefs-flex-grid">
+            
+            <div class="chef-card-pro">
+                <div class="card-image-box">
+                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=500&q=80" alt="الشيف مريم">
+                    <div class="image-meta">
+                        <span class="rating">4.9 ⭐</span>
+                        <span class="status-tag">متاح</span>
+                    </div>
+                </div>
+                <div class="card-data">
+                    <div class="identity-row">
+                        <h3>الشيف مريم محمود</h3>
+                        <span class="loc-tag">📍 المعادي</span>
+                    </div>
+                    <span class="chef-specialty">المحاشي والطيور البلدي</span>
+                    <div class="feat-tags">
+                        <span>🧼 نظافة فندقية</span>
+                        <span>🕒 60-90 د</span>
+                    </div>
+                    <p class="chef-bio">خبرة 15 سنة في الأكل البيتي الأصلي بتتبيلة ريفية ومكونات طازجة يومياً لضمان الجودة.</p>
+                  <a href="./chef-menu.html">
+                    <button class="order-btn" onclick="openMenu('maryam')">عرض المنيو الخاص بها</button>
+
+                  </a>
+                </div>
+            </div>
+
+            <div class="chef-card-pro">
+                <div class="card-image-box">
+                    <img src="https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?auto=format&fit=crop&w=500&q=80" alt="الشيف سارة">
+                    <div class="image-meta">
+                        <span class="rating">4.8 ⭐</span>
+                        <span class="status-tag busy">مزدحم</span>
+                    </div>
+                </div>
+                <div class="card-data">
+                    <div class="identity-row">
+                        <h3>الشيف سارة أحمد</h3>
+                        <span class="loc-tag">📍 الشيخ زايد</span>
+                    </div>
+                    <span class="chef-specialty"> المعجنات وطواجن البشاميل</span>
+                    <div class="feat-tags">
+                        <span>🥩 لحم بلدي</span>
+                        <span>🕒 45-60 د</span>
+                    </div>
+                    <p class="chef-bio">أستاذة الرقاق والبشاميل الغني بالكريمة.. أكل يشرفك في أي عزومة كبيرة أو صغيرة.</p>
+  <a href="./chef-menu.html">
+                    <button class="order-btn" onclick="openMenu('maryam')">عرض المنيو الخاص بها</button>
+
+                  </a>                </div>
+            </div>
+
+            <div class="chef-card-pro">
+                <div class="card-image-box">
+                    <img src="https://images.unsplash.com/photo-1583394238182-6f3ad43267b1?auto=format&fit=crop&w=500&q=80" alt="الشيف هالة">
+                    <div class="image-meta">
+                        <span class="rating">5.0 ⭐</span>
+                        <span class="status-tag">متاح</span>
+                    </div>
+                </div>
+                <div class="card-data">
+                    <div class="identity-row">
+                        <h3>الشيف هالة حسن</h3>
+                        <span class="loc-tag">📍 الإسكندرية</span>
+                    </div>
+                    <span class="chef-specialty">السي فود والمطبخ السكندري</span>
+                    <div class="feat-tags">
+                        <span>🐟 صيد يومي</span>
+                        <span>🕒 90-120 د</span>
+                    </div>
+                    <p class="chef-bio">طواجن سبيط وجمبري وسمك مشوي على الطريقة الإسكندرانية الأصلية بنت البلد.</p>
+  <a href="./chef-menu.html">
+                    <button class="order-btn" onclick="openMenu('maryam')">عرض المنيو الخاص بها</button>
+
+                  </a>                </div>
+            </div>
+
+        </div>
+    </div><style>
+    /* التنسيقات الأساسية */
+    .chefs-hub-section {
+  margin-top: 50px;
+        padding: 60px 20px;
+    }
+
+    .hub-container {
+        max-width: 1400px; /* تحديد أقصى عرض للحاوية لضمان التناسق */
+        margin: 0 auto;
+    }
+
+    .hub-header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .hub-header h2 { font-size: 2rem; color: #2c3e50; margin: 15px 0; }
+    .hub-header .hub-badge {  color: #568255; padding: 6px 15px; border-radius: 20px; font-weight: bold; font-size: 13px; }
+    .hub-header p { color: #7f8c8d; font-size: 1rem; }
+
+    /* شبكة الكروت (الذكية) */
+    .chefs-flex-grid {
+        display: flex;
+        flex-wrap: wrap; /* السماح للكروت بالنزول تحت بعضها */
+        justify-content: center; /* توسيط الكروت في الشاشة */
+        gap: 25px; /* المسافة بين الكروت */
+    }
+
+    /* كارت الشيف (الاحترافي المعدل) */
+    .chef-card-pro {
+        background: #fff;
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        border: 1px solid #f0f0f0;
+        transition: 0.3s ease;
+        /* السر: تحديد عرض ثابت (Max-Width) للكارت */
+        flex: 1 1 300px; /* ينمو ويتقلص لكن لا يقل عن 300px */
+        max-width: 350px; /* أقصى عرض للكارت في أي شاشة */
+    }
+
+    .chef-card-pro:hover { transform: translateY(-8px); }
+
+    .card-image-box { position: relative; height: 180px; }
+    .card-image-box img { width: 100%; height: 100%; object-fit: cover; }
+    
+    .image-meta {
+        position: absolute; top: 12px; left: 12px; right: 12px;
+        display: flex; justify-content: space-between;
+    }
+    .rating { background: rgba(255,255,255,0.9); padding: 4px 10px; border-radius: 10px; font-weight: bold; font-size: 11px; }
+    .status-tag { background: #27ae60; color: #fff; padding: 4px 10px; border-radius: 10px; font-size: 10px; font-weight: bold; }
+    .status-tag.busy { background: #568255; }
+
+    .card-data { padding: 20px; }
+    .identity-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; }
+    .identity-row h3 { margin: 0; font-size: 1.1rem; color: #2d3436; font-weight: 800; }
+    .loc-tag { font-size: 10px; color: #568255; font-weight: bold; }
+
+    .chef-specialty { font-size: 12.5px; color: #555; font-weight: 600; display: block; margin-bottom: 12px; }
+    
+    .feat-tags { display: flex; gap: 8px; margin-bottom: 15px; }
+    .feat-tags span { background: #f8f9fa; padding: 4px 10px; border-radius: 8px; font-size: 10px; color: #777; font-weight: 600; }
+
+    .chef-bio { font-size: 12.5px; color: #666; line-height: 1.6; margin-bottom: 20px; min-height: 55px; }
+
+    .order-btn {
+        width: 100%;
+        background: #568255;
+        color: #fff;
+        border: none;
+        padding: 14px;
+        border-radius: 14px;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .order-btn:hover { background: #568255; }
+
+    /* استجابة الموبايل (Responsive) */
+    @media (max-width: 600px) {
+        .chefs-flex-grid { gap: 15px; }
+        .chefs-hub-section { padding: 40px 10px; }
+        .section-header h2 { font-size: 1.5rem; }
+        .chef-card-pro { max-width: 100%; } /* في الموبايل يأخذ العرض الكامل */
+    }
+</style>
+
+<script>
+    function openMenu(chefId) {
+        alert("أهلاً بك في مطبخ الشيف " + chefId);
+    }
+</script>
+</section>
+
+
+
+        <section class="home-soul-section">
+            <style>
+        .home-soul-section {
+            background-color: #fff9f0; /* لون سكري دافي زي لون العجين */
+            padding: 80px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* لمسة ديكور ريفية في الخلفية */
+        .home-soul-section::after {
+            content: '🌿'; position: absolute; top: 10%; left: 5%; font-size: 3rem; opacity: 0.2;
+        }
+        .home-soul-section::before {
+            content: '🏺'; position: absolute; bottom: 10%; right: 5%; font-size: 3rem; opacity: 0.2;
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; text-align: center; }
+
+        .home-header h2 { font-size: 2.2rem; color: #568255; font-weight: 900; margin-bottom: 15px; }
+        .home-header p { color: #5a5a5a; font-size: 1.1rem; margin-bottom: 50px; }
+
+        .home-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 30px;
+            border: 2px dashed #578255; /* شكل يدوي "Handmade" */
+            transition: 0.3s;
+        }
+
+        .feature-card:hover { transform: translateY(-10px); background: #fdf5e6; }
+
+        .feature-icon { font-size: 3.5rem; display: block; margin-bottom: 20px; }
+        
+        .feature-card h4 { color: #8d4925; font-size: 1.3rem; margin-bottom: 15px; }
+        .feature-card p { color: #666; font-size: 0.95rem; line-height: 1.6; }
+
+        /* ستايل "كلمة الشيف" */
+        .chef-quote {
+            margin-top: 60px;
+            background: #4a5d4d;
+            color: white;
+            padding: 40px;
+            border-radius: 50px 0 50px 0;
+            display: inline-block;
+            max-width: 800px;
+        }
+    </style>
+
+            <div class="container">
+                <div class="home-header">
+                    <h2>الأكل بيتي على أصوله </h2>
+                    <p>مش مجرد طبخ.. ده "نَفَس" وحب وتربية بيوت</p>
+                </div>
+
+                <div class="home-features">
+                    <div class="feature-card">
+                        <span class="feature-icon">🥣</span>
+                        <h4>سمنة بلدي ونَفَس مصري</h4>
+                        <p>مبنعرفش نطبخ بزيت مهدرج، السمنة البلدي والمستكة هما
+                            أساس طعمنا اللي يخليك تأكل صوابعك وراه.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">🥬</span>
+                        <h4>خضار صابح من الغيط</h4>
+                        <p>كل خضارنا بيتنقى بالواحدة يوم بيوم، كأننا بننقي
+                            لبيتنا ولعيالنا بالظبط، مفيش حاجة مركونة.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <span class="feature-icon">🥘</span>
+                        <h4>طواجن الفرن البلدي</h4>
+                        <p>التسوية عندنا في فخار وعلى نار هادية، عشان تاخد طعم
+                            زمان اللي ريحته كانت بتجيب لآخر الشارع.</p>
+                    </div>
+                </div>
+
+                <div class="chef-quote">
+                    <p style="font-size: 1.2rem; font-style: italic;">
+                        "سر الطبخ المصري مش في المقادير، السر في البركة واللمة، وإنك تطبخ وإنت فرحان عشان اللي بياكل يحس بالفرحة دي في لقمته."
+                    </p>
+                    <strong
+                        style="display: block; margin-top: 15px; color: #ffffff;">-
+                        طهاة مطبخنا بيتي -</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="live-order-tracker" >
+            <style>
+        .live-order-tracker {
+            background: #fdfdfd;
+            padding: 60px 20px;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .tracker-card {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 30px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.08);
+            overflow: hidden;
+            border: 1px solid #eee;
+        }
+
+        /* الجزء العلوي: بث المطبخ (تخيلي) */
+        .kitchen-live-view {
+            background: #2c3e50;
+            height: 250px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        .kitchen-live-view img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.6;
+            filter: blur(1px);
+        }
+
+        .live-label {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #e74c3c;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink { 50% { opacity: 0.5; } }
+
+        .status-overlay {
+            position: absolute;
+            text-align: center;
+            z-index: 5;
+        }
+
+        .status-overlay h3 { font-size: 1.8rem; margin: 0; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+        .status-overlay p { color: #ffffff; font-weight: bold; font-size: 1.1rem; }
+
+        /* الجزء السفلي: تفاصيل الرحلة */
+        .tracking-details {
+            padding: 40px;
+        }
+
+        .timeline {
+            position: relative;
+            padding-right: 30px;
+            border-right: 3px solid #f0f0f0;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            right: -39px;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            background: #ddd;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            z-index: 2;
+        }
+
+        /* الحالة اللي شغالة دلوقتي */
+        .timeline-item.active::before {
+            background: #4a5d4d; /* الأخضر بتاعك */
+            box-shadow: 0 0 15px rgba(74, 93, 77, 0.5);
+        }
+
+        .timeline-item.active h4 { color: #4a5d4d; font-size: 1.3rem; }
+
+        .timeline-content h4 { margin: 0; font-size: 1.1rem; color: #333; }
+        .timeline-content p { margin: 5px 0 0; color: #777; font-size: 0.9rem; }
+
+        /* سكشن الدليفري (بيظهر لما الأكل يخرج) */
+        .delivery-guy-box {
+            background: #fdf9f0;
+            border: 2px solid #578255;
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .delivery-guy-box img {
+            width: 60px; height: 60px; border-radius: 50%; object-fit: cover;
+        }
+
+        .call-btn {
+            margin-right: auto;
+            background: #578255;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 0.8rem;
+        }
+    </style>
+
+            <div class="tracker-card">
+                <div class="kitchen-live-view">
+                    <span class="live-label"><span
+                            style="width:8px; height:8px; background:white; border-radius:50%"></span>
+                        لايف من المطبخ</span>
+                    <img
+                        src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800"
+                        alt="Kitchen">
+                    <div class="status-overlay">
+                        <h3>شيف منى بتغرف المحشي حالا </h3>
+                        <p>الدخان طالع.. والريحة تجنن!</p>
+                    </div>
+                </div>
+
+                <div class="tracking-details">
+                    <div class="timeline">
+
+                        <div class="timeline-item active">
+                            <div class="timeline-content">
+                                <h4>مرحلة النَفَس (جوه المطبخ)</h4>
+                                <p>الأكل دلوقتي على "نار هادية" وبياخد التكات
+                                    الأخيرة.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>اللف والتدفئة</h4>
+                                <p>بنقفل العلب بضمير عشان يوصلك سخن "نار" كأنه
+                                    لسه طالع من الفرن.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>على الطريق (مع كابتن محمد)</h4>
+                                <p>الطيار استلم الطلب وهو في طريقه لعنوانك
+                                    دلوقتي.</p>
+
+                                <div class="delivery-guy-box">
+                                    <img src="https://i.pravatar.cc/100?img=12"
+                                        alt="Delivery">
+                                    <div>
+                                        <strong>كابتن محمد الصاوي</strong>
+                                        <p
+                                            style="font-size: 0.8rem; margin:0">على
+                                            موتوسيكل: ج ب 1234</p>
+                                    </div>
+                                    <a href="tel:0123456789" class="call-btn">📞
+                                        كلم الطيار</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>بالهنا والشفا على قلبك</h4>
+                                <p>خبطة الباب قربت.. جهز الطبلية!</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="join-our-team" >
+            <style>
+        .join-our-team {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                        url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1200');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* حركة Parallax فخمة */
+            padding: 100px 20px;
+            color: #fff;
+            text-align: center;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .join-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px); /* تأثير الزجاج الضبابي */
+            padding: 50px;
+            border-radius: 30px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .join-header h2 { font-size: 2.5rem; color: #578255; margin-bottom: 15px; }
+        .join-header p { font-size: 1.1rem; color: #ccc; line-height: 1.8; margin-bottom: 40px; }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .benefit-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .benefit-item:hover { background: #578255; color: #000; }
+        .benefit-item i { font-size: 1.5rem; display: block; margin-bottom: 10px; }
+        .benefit-item span { font-weight: bold; font-size: 0.9rem; }
+
+        /* زر التقديم */
+        .apply-btn {
+            background: #578255;
+            color: #000;
+            text-decoration: none;
+            padding: 18px 45px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            display: inline-block;
+            transition: 0.4s;
+            border: 2px solid #578255;
+        }
+
+        .apply-btn:hover {
+            background: transparent;
+            color: #578255;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.137)
+        }
+
+        @media (max-width: 600px) {
+            .join-container { padding: 30px 15px; }
+            .join-header h2 { font-size: 1.8rem; }
+        }
+    </style>
+
+            <div class="join-container">
+                <div class="join-header">
+                    <h2>هل تمتلك سحر الطهي؟ </h2>
+                    <p>نحن نبحث دائماً عن المبدعين والشيفات الشغوفين للانضمام
+                        إلى فريق مطبخنا العالمي وتقديم تجارب تذوق لا تُنسى.</p>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div>🔪</div>
+                        <span>بيئة عمل احترافية</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div>📈</div>
+                        <span>تطوير ومهارات</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div>💰</div>
+                        <span>رواتب تنافسية</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div>🌍</div>
+                        <span>فريق عالمي</span>
+                    </div>
+                </div>
+
+                <a href="#" class="apply-btn">قدم سيرتك الذاتية الآن</a>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-logo"> مطبخنا بيتي </div>
+                <p>نقدم لك أجود الوجبات المنزلية المصنوعة بكل حب ونظافة.</p>
+                <div class="social-links">
+                    <span>Facebook</span> | <span>Instagram</span> |
+                    <span>TikTok</span>
+                </div>
+                <hr>
+                <p class="copyright">© 2026 جميع الحقوق محفوظة ل بيتي</p>
+            </div>
+        </footer>
+
+        <a href="https://wa.me/201026377928" class="whatsapp-float"
+            target="_blank">
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                alt="WhatsApp">
+            <span>اسأل الشيف</span>
+        </a>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>
